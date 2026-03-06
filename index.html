@@ -1,212 +1,249 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ISMAIL EL JAMAAOUY | Graphic Designer</title>
+<title>ISMAIL EL JAMAAOUY | Graphic Designer</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #0b0b0b;
-      color: white;
-      overflow-x: hidden;
-    }
+<style>
 
-    /* ===== HERO ===== */
-
-    .hero {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      z-index: 2;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 60px;
-      font-weight: 800;
-      letter-spacing: 4px;
-      color: #00ff66;
-      margin: 0;
-    }
-
-    p {
-      font-size: 20px;
-      color: #cccccc;
-      margin-top: 15px;
-    }
-
-    .btn {
-      margin-top: 30px;
-      padding: 12px 35px;
-      background: #00ff66;
-      color: black;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 30px;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: white;
-      transform: scale(1.05);
-    }
-
-    /* ===== BACKGROUND SHAPES ===== */
-
-    .moon {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(100px);
-      opacity: 0.5;
-      animation: float 10s infinite ease-in-out;
-      z-index: 0;
-    }
-
-    .moon1 {
-      width: 300px;
-      height: 300px;
-      background: #00ff66;
-      top: 10%;
-      left: 10%;
-    }
-
-    .moon2 {
-      width: 250px;
-      height: 250px;
-      background: white;
-      bottom: 15%;
-      right: 10%;
-      animation-delay: 3s;
-    }
-
-    @keyframes float {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-40px); }
-      100% { transform: translateY(0px); }
-    }
-
-    /* ===== ABOUT SECTION ===== */
-
-    .about {
-      padding: 120px 20px;
-      background: #111;
-      text-align: center;
-    }
-
-    .about h2 {
-      font-size: 40px;
-      color: #00ff66;
-      margin-bottom: 20px;
-    }
-
-    .about p {
-      max-width: 700px;
-      margin: auto;
-      font-size: 18px;
-      color: #cccccc;
-      line-height: 1.6;
-    }
-    .about-img{
-  width:180px;
-  border-radius:50%;
-  margin-top:20px;
-  border:3px solid #00ff88;
-  box-shadow:0 0 25px rgba(0,255,136,0.5);
-  transition:0.4s;
+body{
+margin:0;
+font-family:'Poppins', sans-serif;
+background:#0b0b0b;
+color:white;
+overflow-x:hidden;
 }
 
-/* hover effect */
-.about-img:hover{
-  transform:scale(1.08);
-  box-shadow:0 0 40px rgba(0,255,136,0.9);
+/* ================= HERO ================= */
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+position:relative;
 }
 
-/* animation */
+h1{
+font-size:60px;
+font-weight:800;
+letter-spacing:4px;
+color:#00ff66;
+margin:0;
+}
+
+p{
+font-size:20px;
+color:#cccccc;
+margin-top:15px;
+}
+
+.btn{
+margin-top:30px;
+padding:12px 35px;
+background:#00ff66;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:30px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:white;
+transform:scale(1.05);
+}
+
+/* ================= BACKGROUND ================= */
+
+.moon{
+position:absolute;
+border-radius:50%;
+filter:blur(100px);
+opacity:0.5;
+z-index:-1;
+animation:float 10s infinite ease-in-out;
+}
+
+.moon1{
+width:300px;
+height:300px;
+background:#00ff66;
+top:10%;
+left:10%;
+}
+
+.moon2{
+width:250px;
+height:250px;
+background:white;
+bottom:15%;
+right:10%;
+animation-delay:3s;
+}
+
 @keyframes float{
-  0%{transform:translateY(0px);}
-  50%{transform:translateY(-10px);}
-  100%{transform:translateY(0px);}
+0%{transform:translateY(0);}
+50%{transform:translateY(-40px);}
+100%{transform:translateY(0);}
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+padding:120px 20px;
+background:#111;
+text-align:center;
+}
+
+.about h2{
+font-size:40px;
+color:#00ff66;
+}
+
+.about p{
+max-width:700px;
+margin:auto;
+font-size:18px;
+color:#cccccc;
+line-height:1.6;
 }
 
 .about-img{
-  animation: float 4s ease-in-out infinite;
+width:140px;
+height:140px;
+border-radius:50%;
+margin-top:25px;
+border:3px solid #00ff66;
+box-shadow:0 0 25px rgba(0,255,102,0.5);
+object-fit:cover;
+transition:0.4s;
+animation:float 4s infinite ease-in-out;
 }
 
-  </style>
+.about-img:hover{
+transform:scale(1.1);
+box-shadow:0 0 40px rgba(0,255,102,0.9);
+}
+
+/* ================= PROJECTS ================= */
+
+.projects{
+padding:120px 20px;
+background:#0f0f0f;
+text-align:center;
+}
+
+.projects h2{
+font-size:40px;
+color:#00ff66;
+margin-bottom:60px;
+}
+
+.project-grid{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:100px;
+  width:100%;
+}
+
+.project-card{
+  width:50%;          /* 👈 صغّر أكثر */
+  max-width:500px;     /* 👈 حد أقصى صغير */
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.project-card img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:20px;
+}
+
+.project-card:nth-child(1){animation-delay:0.2s;}
+.project-card:nth-child(2){animation-delay:0.4s;}
+.project-card:nth-child(3){animation-delay:0.6s;}
+
+.project-card img{
+width:100%;
+height:auto;
+display:block;
+border-radius:25px;
+transition:0.4s;
+}
+
+.project-card:hover img{
+transform:scale(1.05);
+filter:brightness(1.2);
+}
+
+.project-card:hover{
+box-shadow:0 0 40px rgba(0,255,102,0.5);
+}
+
+@keyframes fadeUp{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+</style>
 </head>
 
 <body>
 
-  <!-- Background -->
-  <div class="moon moon1"></div>
-  <div class="moon moon2"></div>
+<!-- BACKGROUND -->
+<div class="moon moon1"></div>
+<div class="moon moon2"></div>
 
-  <!-- HERO -->
-  <div class="hero">
-    <h1>ISMAIL EL JAMAAOUY</h1>
-    <p>Graphic Designer</p>
-    <a href="#about" class="btn">View My Work</a>
-  </div>
+<!-- HERO -->
+<div class="hero">
+<h1>ISMAIL EL JAMAAOUY</h1>
+<p>Graphic Designer</p>
+<a href="#about" class="btn">View My Work</a>
+</div>
 
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a passionate Graphic Designer specialized in sports design,
-      branding and visual identity. I create strong and professional
-      visuals that represent power, creativity and personality.
-    </p>
-    <img src="photo.jpg" alt="Ismail Eljamaaoui Photo" class="about-img">
-    
-  </section>
+<!-- ABOUT -->
+<section class="about" id="about">
+<h2>About Me</h2>
+
+<p>
+I am a passionate Graphic Designer specialized in sports design,
+branding and visual identity. I create strong and professional
+visuals that represent power, creativity and personality.
+</p>
+
+<img src="photo.jpg" class="about-img">
+
+</section>
+
 <!-- PROJECTS -->
-
-<section id="projects">
-
+<section class="projects" id="projects">
 <h2>My Projects</h2>
 
-<div class="projects">
+<div class="project-grid">
 
-<div class="card">
-<h3>Football Posters</h3>
-<p>Creative sports posters and player edits.</p>
+<div class="project-card">
+<img src="project1.jpg">
 </div>
 
-<div class="card">
-<h3>T-shirt Designs</h3>
-<p>Streetwear and anime inspired designs.</p>
+<div class="project-card">
+<img src="project2.jpg">
 </div>
 
-<div class="card">
-<h3>Movie Posters</h3>
-<p>Cinematic poster concepts and edits.</p>
+<div class="project-card">
+<img src="project3.jpg">
 </div>
 
 </div>
 
 </section>
-
-<!-- CONTACT -->
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<p>Email: ismail@email.com</p>
-
-</section>
-
-<footer>
-
-<p>© 2026 Ismail Designer</p>
-
-</footer>
 
 </body>
 </html>
