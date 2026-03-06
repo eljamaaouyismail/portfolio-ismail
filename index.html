@@ -112,6 +112,31 @@
       color: #cccccc;
       line-height: 1.6;
     }
+    .about-img{
+  width:180px;
+  border-radius:50%;
+  margin-top:20px;
+  border:3px solid #00ff88;
+  box-shadow:0 0 25px rgba(0,255,136,0.5);
+  transition:0.4s;
+}
+
+/* hover effect */
+.about-img:hover{
+  transform:scale(1.08);
+  box-shadow:0 0 40px rgba(0,255,136,0.9);
+}
+
+/* animation */
+@keyframes float{
+  0%{transform:translateY(0px);}
+  50%{transform:translateY(-10px);}
+  100%{transform:translateY(0px);}
+}
+
+.about-img{
+  animation: float 4s ease-in-out infinite;
+}
 
   </style>
 </head>
@@ -137,7 +162,8 @@
       branding and visual identity. I create strong and professional
       visuals that represent power, creativity and personality.
     </p>
-    <img src="photo.jpg" alt="My Photo">
+    <img src="photo.jpg" alt="Ismail Eljamaaoui Photo" class="about-img">
+    
   </section>
 <!-- PROJECTS -->
 
